@@ -1,0 +1,39 @@
+# generated: {{date}}
+# last_updated: {{date}}
+# project: {{project_name}}
+# project_key: {{project_key}}
+# tracking_system: {{tracking_system}}
+# ticket_location: {{implementation_artifacts}}/tickets
+
+# STATUS DEFINITIONS:
+# ==================
+# Feature Status:
+#   - backlog: Feature not yet started
+#   - in-progress: Feature actively being worked on (stories/tickets being created)
+#   - done: All stories in feature completed
+#
+# User Story Status:
+#   - backlog: Story defined in features.md
+#   - ready-for-dev: User Story has been broken down into tickets
+#   - in-progress: Tickets for this story are being worked on
+#   - done: All tickets for this story are completed
+#
+# Ticket Status (Unit of Work):
+#   - backlog: Ticket defined in ticket file
+#   - ready-for-dev: Ticket is ready for implementation
+#   - in-progress: Dev agent is currently implementing the ticket
+#   - review: Ticket is ready for code review
+#   - done: Ticket implementation is verified and complete
+
+generated: {{date}}
+last_updated: {{date}}
+project: {{project_name}}
+project_key: {{project_key}}
+tracking_system: {{tracking_system}}
+ticket_location: {{implementation_artifacts}}/tickets
+
+development_status:
+  # Hierarchy:
+  # feature-N: status
+  # N-M-user-story-name: status
+  # N-M-L-ticket-name: status
