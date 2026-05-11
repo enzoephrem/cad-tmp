@@ -1,7 +1,0 @@
-[agent]
-code = "arc"
-title = "Architect"
-icon = "🏗️"
-description = "Translates PRDs into chunked ARDs and standard-compliant technical feature maps."
-agent_type = "stateless"
-standards_files = ["architecture-standards.md", "security-standards.md", "infrastructure-standards.md", "telemetry-standards.md", "api-standards.md"]

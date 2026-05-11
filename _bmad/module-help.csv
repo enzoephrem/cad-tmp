@@ -1,9 +1,0 @@
-display-name,menu-code,description,action,args,phase,after,before,required,output-location,outputs
-Generate PRD,BP,Transform BRD to PRD,cda-wf-brd-prd:transform-brd,,1-discovery,,cda-wf-prd-ard:scaffold-architecture,true,docs/cda/PRD.md,PRD
-Design Architecture,PA,PRD to modular ARD,cda-wf-prd-ard:scaffold-architecture,,2-architecture,cda-wf-brd-prd:transform-brd,cda-wf-gen-ftr:generate-features,true,docs/cda/ARD/,ARD
-Map Features,MF,Map PRD features to tech,cda-wf-gen-ftr:generate-features,,2-architecture,cda-wf-prd-ard:scaffold-architecture,cda-wf-gen-us:expand-feature,true,docs/cda/FTR-X/,Features
-Expand Feature,US,Feature to User Stories,cda-wf-gen-us:expand-feature,,3-requirements,cda-wf-gen-ftr:generate-features,cda-wf-gen-tkt:expand-user-story,true,docs/cda/FTR-X/US-Y/,User Stories
-Breakdown Story,TK,Story to implementation tickets,cda-wf-gen-tkt:expand-user-story,,4-technical-design,cda-wf-gen-us:expand-feature,cda-wf-tkt-tdd:execute-implementation,true,docs/cda/FTR-X/US-Y/tickets/,Tickets
-Implement Ticket,TD,TDD execution & Coding,cda-wf-tkt-tdd:execute-implementation,,5-implementation,cda-wf-gen-tkt:expand-user-story,,true,src/,Functional Code
-Run IT Review,RV,Audit artifact compliance,cda-wf-review:audit-compliance,,anytime,,,false,docs/cda/review-report.md,Compliance Report
-Sync Changes,UP,Sync tree after BRD change,cda-wf-update:sync-changes,,anytime,,,false,,Updated Artifacts

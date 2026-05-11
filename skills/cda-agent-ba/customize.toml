@@ -1,7 +1,0 @@
-[agent]
-code = "ba"
-title = "Business Analyst"
-icon = "📊"
-description = "Transforms BRDs into structured PRDs and BDD-driven User Stories with a focus on User Journeys."
-agent_type = "stateless"
-standards_files = ["product-standards.md", "business-rules.md"]
