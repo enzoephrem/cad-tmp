@@ -1,0 +1,13 @@
+[workflow]
+ard_output_folder = "docs/cda/ARD"
+standards_files = ["architecture-standards.md", "security-standards.md", "api-standards.md"]
+ard_index_template = "assets/ard-index-template.md"
+ard_chunk_template = "assets/ard-chunk-template.md"
+
+[workflow.metadata]
+code = "prd-ard"
+description = "Orchestrates PRD to ARD transformation and Feature mapping."
+is_required = true
+phase_name = "architecture"
+after = ["brd-prd"]
+before = ["gen-us"]

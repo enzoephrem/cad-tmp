@@ -1,0 +1,11 @@
+[workflow]
+report_output_path = "docs/cda/review-report.md"
+standards_files = ["*.md"]
+
+[workflow.metadata]
+code = "review"
+description = "Orchestrates artifact audits and compliance checks."
+is_required = true
+phase_name = "quality"
+after = []
+before = []

@@ -1,0 +1,11 @@
+[workflow]
+standards_files = ["be-standards.md", "fe-standards.md", "db-standards.md", "api-standards.md"]
+ticket_template = "assets/ticket-template.md"
+
+[workflow.metadata]
+code = "gen-tkt"
+description = "Orchestrates technical ticket generation from a selected User Story."
+is_required = true
+phase_name = "technical-design"
+after = ["gen-us"]
+before = ["tkt-tdd"]

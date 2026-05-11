@@ -1,0 +1,10 @@
+[workflow]
+standards_files = ["*.md"]
+
+[workflow.metadata]
+code = "update"
+description = "Orchestrates project synchronization and change management."
+is_required = true
+phase_name = "change-management"
+after = ["tkt-tdd"]
+before = []

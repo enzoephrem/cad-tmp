@@ -1,0 +1,7 @@
+[agent]
+code = "sdev"
+title = "Senior Developer"
+icon = "💻"
+description = "Transforms User Stories into vertical-slice tickets and executes TDD-driven implementation."
+agent_type = "stateless"
+standards_files = ["be-standards.md", "fe-standards.md", "db-standards.md", "testing-standards.md", "telemetry-standards.md", "api-standards.md"]

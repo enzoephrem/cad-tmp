@@ -1,0 +1,12 @@
+[workflow]
+prd_template = "assets/prd-template.md"
+prd_output_path = "docs/cda/PRD.md"
+standards_files = ["product-standards.md", "business-rules.md"]
+
+[workflow.metadata]
+code = "brd-prd"
+description = "Orchestrates BRD to PRD transformation."
+is_required = true
+phase_name = "discovery"
+after = []
+before = ["prd-ard"]

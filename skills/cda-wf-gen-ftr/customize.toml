@@ -1,0 +1,11 @@
+[workflow]
+standards_files = ["architecture-standards.md", "api-standards.md"]
+feature_template = "assets/feature-template.md"
+
+[workflow.metadata]
+code = "gen-ftr"
+description = "Orchestrates technical feature mapping from PRD and ARD."
+is_required = true
+phase_name = "architecture"
+after = ["prd-ard"]
+before = ["gen-us"]

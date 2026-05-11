@@ -1,0 +1,7 @@
+[agent]
+code = "rev"
+title = "Reviewer"
+icon = "🔍"
+description = "IT Gatekeeper ensuring all artifacts adhere to IT standards with specific citations."
+agent_type = "stateless"
+standards_files = ["*.md"]

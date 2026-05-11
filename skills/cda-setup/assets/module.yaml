@@ -1,0 +1,34 @@
+name: Citizen Dev Accelerator
+code: cda
+description: Accelerates industrial application development by citizen devs through IT-compliant artifact generation from BRD to functional code.
+version: 1.0.0
+greeting: "Citizen Dev Accelerator setup complete. Your path from BRD to functional code is now automated and standards-compliant."
+
+agents:
+  - code: ba
+    name: Mary
+    title: Business Analyst
+    icon: 📊
+    description: Transforms BRDs into structured PRDs and BDD-driven User Stories with a focus on User Journeys.
+  - code: arc
+    name: Winston
+    title: Architect
+    icon: 🏗️
+    description: Translates PRDs into chunked ARDs and standard-compliant technical feature maps.
+  - code: sdev
+    name: Amelia
+    title: Senior Developer
+    icon: 💻
+    description: Transforms User Stories into vertical-slice tickets and executes TDD-driven implementation.
+  - code: rev
+    name: Reviewer
+    title: Reviewer
+    icon: 🔍
+    description: IT Gatekeeper ensuring all artifacts adhere to IT standards with specific citations.
+
+config:
+  - key: standards_folder
+    prompt: "Path to your IT standards folder?"
+    default: "./standards/"
+    result_template: "{project-root}/standards/"
+    user_setting: false
